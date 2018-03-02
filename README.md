@@ -4,7 +4,7 @@ WordCloud's goal is to create a powerful and user friendly Words Frequencies bas
 
 The list generated from WordCloud can be used in tools like [WordArt](https://wordart.com/) (Checked the CSV in option).
 
-The online tool of Wordcloud is [here](wordpeep-wordpeople.1d35.starter-us-east-1.openshiftapps.com/WordCloud/).
+The online tool of Wordcloud is [here](http://wordpeep-wordpeople.1d35.starter-us-east-1.openshiftapps.com/WordCloud/).
 
 Upload the text file that you want to get the word/frequecy and you will get the result in next page.
 
