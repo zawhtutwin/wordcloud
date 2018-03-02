@@ -7,11 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/WordCloud/step2" method="POST">
+<form action="/WordCloud/step2" method="POST" enctype="multipart/form-data">
 <strong>Step1</strong>
-Enter your text below
----------------------
-<textarea rows="10" cols="10" name="inputText"></textarea>
+</BR>
+Select Text File:<input type="file" name="file" /><br/>
 <input type="submit" value="submit"/>
 </form>
 </body>
