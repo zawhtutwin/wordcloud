@@ -1,43 +1,24 @@
 package com.zhw.wordcloud;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.commons.io.output.FileWriterWithEncoding;
-import org.apache.commons.lang.StringEscapeUtils;
-import org.apache.commons.lang3.CharSet;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.kennycason.kumo.CollisionMode;
-import com.kennycason.kumo.WordCloud;
 import com.kennycason.kumo.WordFrequency;
-import com.kennycason.kumo.bg.PixelBoundryBackground;
-import com.kennycason.kumo.font.FontWeight;
-import com.kennycason.kumo.font.KumoFont;
-import com.kennycason.kumo.font.scale.LinearFontScalar;
 import com.kennycason.kumo.nlp.FrequencyAnalyzer;
-import com.kennycason.kumo.palette.ColorPalette;
 
-@Controller
+@ControllerAdvice
 @RequestMapping("/")
 public class StepsController {
 	@RequestMapping(value = "step1", method = RequestMethod.GET)
